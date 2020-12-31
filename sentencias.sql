@@ -128,7 +128,8 @@ VALUES  ('Eduardo', 'García', 'eduardogpg', 'eduardo@codigofacilito.com'),
         ('Codi3', 'Facilito', 'codigofacilito', 'ayuda@codigofacilito.com');
 
 INSERT INTO libros_usuarios(libro_id, usuario_id)
-VALUES (1,1),(2,1),(3,1);
+VALUES (1,1), (2,1), (3,1),
+       (10,3), (20,3), (30,3);
 
 
 DESC autores;
