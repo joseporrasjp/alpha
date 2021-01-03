@@ -60,3 +60,7 @@ INNER JOIN autores ON libros.autor_id = autores.autor_id
         INNER JOIN libros ON libros_usuarios.libro_id = libros.libro_id
         INNER JOIN autores ON libros.autor_id = autores.autor_id
                 AND autores.seudonimo IS NOT NULL;
+
+SELECT usuarios.username, libros.titulo FROM usuarios CROSS JOIN libros ORDER BY username DESC;
+
+INSERT INTO libros_usuarios(libro_id, usuario_id) SELECT libro_id, usuario_id FROM usuarios CROSS JOIN libros;
